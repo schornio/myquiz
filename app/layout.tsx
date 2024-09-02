@@ -3,7 +3,9 @@ import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import { ReactNode } from 'react';
 
-const montserrat = Montserrat();
+const montserrat = Montserrat({
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'My Quiz - schorn.ai',
